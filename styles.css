@@ -1,0 +1,241 @@
+/* Custom styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tab {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: #007bff;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tabContent {
+    margin-top: 20px;
+}
+
+.form-control {
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+.btn {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.output-container {
+    margin-top: 20px;
+}
+
+.output-card {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Aligning form inputs */
+.form-row .form-control {
+    width: 200px; /* Adjust as needed */
+    margin-right: 10px; /* Spacing between inputs */
+}
+
+/* Animation for card display */
+.animate__fadeIn {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Other styles */
+/* Add your other styles here */
+/* ... (existing CSS rules) */
+
+/* Styling for share buttons */
+.share-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Twitter share button */
+.share-button.twitter {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+/* WhatsApp share button */
+.share-button.whatsapp {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.share-button:hover {
+    transform: scale(1.1);
+}
+
+/* ... (existing CSS rules) */
+
+/* Styling for congratulations message */
+.congratulations-message {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.congratulations-message h2 {
+    font-size: 28px;
+    color: #007bff;
+}
+
+.congratulations-message p {
+    font-size: 18px;
+}
+
+.image-container {
+    margin-top: 20px;
+}
+
+.image-container img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.share-buttons {
+    margin-top: 20px;
+}
+
+/* Animation for congratulations message */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate__fadeInUp {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+
+.text-with-bg {
+    /* Set the background image */
+    background-image: url('thala.jpg'); /* Replace 'thala.jpg' with your image file */
+
+    /* Specify background size, position, and other properties */
+    background-size: cover; /* Adjust this to suit your needs */
+    background-position: center; /* Adjust this to suit your needs */
+    color: white; /* Set text color to be visible on the background */
+    padding: 20px; /* Add padding for better readability */
+}
+
+.gif-image {
+            max-width: 300px; /* Adjust the width as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+.custom-alert {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .alert-danger {
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+
+    /* Add animations */
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+    /* Apply animation to the alert */
+    .animated-alert {
+        animation: fadeIn 0.5s ease-in-out forwards, fadeOut 0.5s ease-in-out 2.5s forwards;
+    }
+
+
+ .preloader-container {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .preloader-message {
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            animation: fadeInOut 2s ease-in-out infinite;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }

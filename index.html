@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thala For A Reason</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+
+
+<div class="preloader-container">
+        <div class="preloader-message">
+        Bhai just for fun banai hi design jyada seriously na lena 
+        </div>
+    </div>
+
+    <div class="container" >
+        <img src="thala_dribble.gif" alt="Thala Dribble GIF" class="gif-image mb-5">
+        <div id="tabs" class="d-flex justify-content-center mb-4">
+            <button class="tab btn active mx-1" onclick="showTab('oneDigit')">One Digit</button>
+            <button class="tab btn mx-1" onclick="showTab('twoDigits')">Two Digits</button>
+            <button class="tab btn mx-1" onclick="showTab('threeDigits')">Three Digits</button>
+            <button class="tab btn mx-1" onclick="showTab('anyWord')">Any Word</button>
+        </div>
+        
+        <div id="oneDigit" class="tabContent">
+            <input type="text" id="singleDigit" class="form-control mb-3" placeholder="Type the Lucky number">
+            <button onclick="checkOneDigit()" class="btn btn-primary">Submit</button>
+        </div>
+       
+        <div id="twoDigits" class="tabContent" style="display: none;">
+            <input type="text" id="firstDigit" class="form-control mb-3" placeholder="First Lucky number">
+            <input type="text" id="secondDigit" class="form-control mb-3" placeholder="Second Lucky number">
+            <button onclick="checkTwoDigits()" class="btn btn-primary">Submit</button>
+        </div>
+        
+        <div id="threeDigits" class="tabContent" style="display: none;">
+            <input type="text" id="digitOne" class="form-control mb-3" placeholder="First Lucky number">
+            <input type="text" id="digitTwo" class="form-control mb-3" placeholder="Second Lucky number">
+            <input type="text" id="digitThree" class="form-control mb-3" placeholder="Third Lucky number">
+            <button onclick="checkThreeDigits()" class="btn btn-primary">Submit</button>
+        </div>
+
+        <div id="anyWord" class="tabContent" style="display: none;">
+            <input type="text" id="word" class="form-control mb-3" placeholder="Type the Lucky word">
+            <button onclick="checkWord()" class="btn btn-primary">Submit</button>
+        </div>
+
+        <div id="output" class="output-container">
+            <div id="outputCard" class="output-card"></div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <audio id="success-sound" src="bolejho.m4a" preload="auto"></audio>
+</body>
+</html>
